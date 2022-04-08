@@ -12,8 +12,13 @@ def main():
     with open (TABLE_FPATH) as in_file:
         tnames = [l.strip("\n") for l in in_file.readlines()]
 
+    # Store host ip, db name, user name, and user pwd in a separate file.
+    DB_INFORMATION_FPATH = "./db_info.txt"
+    with open (DB_INFORMATION_FPATH) as in_file:
+        params = [l.strip("\n") for l in in_file.readlines()]
+
     # Create Connection
-    sql = SQLConnector("10.250.78.214", "Building", "ipsreport", "cusereport")
+    sql = SQLConnector(params[0], params[1], params[2], params[3])
     # Create querier.
     querier = SQLQuerier(sql.get_connection())
 
