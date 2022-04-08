@@ -8,10 +8,11 @@ This is nothing fancy. Currently it just pulls whole tables, stores it in a dict
 
 1. Clone or Download this Repo.
 2. Create a virtual enviornment to store libraries. `python3 -m venv venv`
-3. Install requirements. `pip install -r requirements.txt`
-4. Create a file called: `db_info.txt` and put it in the root directory of this respoitory (more on this). `touch db_info.txt`
-5. Edit `tables_to_pull.txt` to reflect the tables you want to pull.
-6. Run `main.py`
+3. Activate the environment. `venv\Scripts\activate`. Or, if Linux / Mac `source venv/bin/activate`.
+4. Install requirements. `pip install -r requirements.txt`
+5. Create a file called: `db_info.txt` and put it in the root directory of this respoitory (more on this). `touch db_info.txt`
+6. Edit `tables_to_pull.txt` to reflect the tables you want to pull.
+7. Run `main.py`
 
 # `db_info.txt` 
 
